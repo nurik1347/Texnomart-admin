@@ -1,0 +1,203 @@
+.header {
+    background-color: #f7f7f7;
+    /* Sof oq rang */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    /* Yuqoridan-pastdan 15px, chapdan-o‘ngdan 30px */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Engil soya */
+}
+
+.header .logo {
+    width: 150px;
+    /* Logoni kichikroq va skromniy qilish */
+}
+
+.header .search-input {
+    width: 300px;
+    /* Kengligi kichikroq */
+    padding: 8px 12px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.header .search-input:focus {
+    border-color: #333;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Rasmlar orasidagi masofa */
+}
+
+.header .user-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.header .user-image {
+    width: 50px;
+    /* User rasm kattaligi kichikroq va skromniy */
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* style.css */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 400px;
+    max-width: 90%;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="url"],
+input[type="text"],
+input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #004494;
+    transform: scale(1);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-list li a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+
+}
